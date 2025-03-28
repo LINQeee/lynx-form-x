@@ -6,7 +6,7 @@ import {
   type FormHookValue,
   type OnSubmit,
   type ValidateFunc,
-} from '../hooks/useForm.js'
+} from '../hooks/useForm.jsx'
 
 type FormProps<T> = {
   initialValues?: T

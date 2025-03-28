@@ -1,6 +1,5 @@
 import {useContext, type FC} from '@lynx-js/react'
 import type {ViewProps} from '@lynx-js/types'
-import {useEffect} from 'react'
 import {formContext} from './Form.jsx'
 
 type SubmitButtonProps = {
@@ -18,9 +17,6 @@ export const SubmitButton: FC<SubmitButtonProps> = ({
 }) => {
   const form = useContext(formContext)!
 
-  useEffect(() => {
-    console.log(form.isSubmitting)
-  }, [form.isSubmitting])
   return (
     <view
       className={
