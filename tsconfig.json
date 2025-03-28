@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+
+    "module": "node16",
+    "moduleResolution": "node16",
+
+    "outDir": "build",
+
+    "strict": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "declaration": true,
+    "emitDeclarationOnly": false
+  },
+  "exclude": ["dist/", "src/tests", "lynx.config.ts"]
+}
