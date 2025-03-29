@@ -1,7 +1,11 @@
 {
   "name": "lynx-form-x",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LINQeee/lynx-form-x"
+  },
   "scripts": {
     "build": "rspeedy build",
     "dev": "rspeedy dev",
@@ -29,5 +33,19 @@
     "build"
   ],
   "main": "build/index.js",
-  "types": "build/index.d.ts"
+  "types": "build/index.d.ts",
+  "keywords": [
+    "form",
+    "validation",
+    "zod",
+    "lynx",
+    "lynx-js",
+    "forms",
+    "hook",
+    "hooks",
+    "useField",
+    "input",
+    "form-library",
+    "react"
+  ]
 }
