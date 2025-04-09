@@ -188,7 +188,9 @@ export function App() {
 - **Props:**
   - `initialValues?`: _(optional)_ Object with initial form values.
   - `schema?`: _(optional)_ A Zod schema used for validation.
-  - `validation?`: _(optional)_ A custom validation function. Should return an object where keys are field names and values are error messages.
+  - `validation?`: _(optional)_ A custom validation function. Should return an object
+  - `value?`: _(optional)_ A value which replaces input value without deleting it in `useField`
+    where keys are field names and values are error messages.
   - `onSubmit`: Function called on form submission. Receives two arguments:
     1. `values`: The current form values.
     2. `helpers`: An object containing `setValue` and `setError` functions to update any field.

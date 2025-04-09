@@ -7,6 +7,7 @@ import {formContext} from './Form.jsx'
 type FieldProps = {
   name: string
   bindinput?: BindInput
+  value?: string
 } & Partial<ViewProps>
 
 export const Field: FC<FieldProps> = ({
@@ -14,6 +15,7 @@ export const Field: FC<FieldProps> = ({
   name,
   bindinput,
   bindblur,
+  value,
   ...props
 }) => {
   const {handleBlur, handleInput, values, setValue} = useContext(formContext)!
@@ -33,7 +35,7 @@ export const Field: FC<FieldProps> = ({
         handleBlur(name)()
         bindblur?.(event)
       }}
-      value={values[name]}
+      value={value === undefined ? values[name] : value}
       {...props}
     />
   )
