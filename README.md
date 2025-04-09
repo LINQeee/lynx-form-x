@@ -198,7 +198,6 @@ export function App() {
 
 - **Props:**
   - `name`: The field name. The library binds the input to this name in the form state.
-  - `value?`: _(optional)_ A value which replaces input value without deleting it in `useField`.
 
 ### `<Error>`
 
