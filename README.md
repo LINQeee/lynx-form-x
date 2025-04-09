@@ -189,7 +189,6 @@ export function App() {
   - `initialValues?`: _(optional)_ Object with initial form values.
   - `schema?`: _(optional)_ A Zod schema used for validation.
   - `validation?`: _(optional)_ A custom validation function. Should return an object
-  - `value?`: _(optional)_ A value which replaces input value without deleting it in `useField`
     where keys are field names and values are error messages.
   - `onSubmit`: Function called on form submission. Receives two arguments:
     1. `values`: The current form values.
@@ -199,6 +198,7 @@ export function App() {
 
 - **Props:**
   - `name`: The field name. The library binds the input to this name in the form state.
+  - `value?`: _(optional)_ A value which replaces input value without deleting it in `useField`.
 
 ### `<Error>`
 
